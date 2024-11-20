@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+    .flag{
+      height: 900px;
+      width: 100%;
+      position: relative;
+      background-color: orange;
+      
+      
+    }
+    .flag > div {
+      position: absolute;
+      height: 600px;
+      width: 100%;
+      background-color: white;
+      top: 300px
+    }
+
+    .flag> div > div.wheel{
+      height: 290px;
+      width: 300px;
+      border: 3px solid darkblue;
+      border-radius: 50%;
+      position: relative;
+      top: 3px;
+      left:40%;
+
+    }
+
+    .flag > div > div.wheel> .line{
+      height: 100%;
+      width: 2px;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      background: darkblue;
+    }
+    
+    p{
+      font-size: 5rem;
+      position: absolute;
+      left: 40%;
+      color: white;
+    }
+
+    .green p{
+      left:44%
+    }
+
+    .wheel > p{
+      position: absolute;
+      color:  darkblue;
+      top: 5%;
+    }
+     
+.line:nth-child(1) {
+    transform: rotate(15deg)
+}
+ 
+.line:nth-child(2) {
+    transform: rotate(30deg)
+}
+ 
+.line:nth-child(3) {
+    transform: rotate(45deg)
+}
+ 
+.line:nth-child(4) {
+    transform: rotate(60deg)
+}
+ 
+.line:nth-child(5) {
+    transform: rotate(75deg)
+}
+ 
+.line:nth-child(6) {
+    transform: rotate(90deg)
+}
+ 
+.line:nth-child(7) {
+    transform: rotate(105deg)
+}
+ 
+.line:nth-child(8) {
+    transform: rotate(120deg)
+}
+ 
+.line:nth-child(9) {
+    transform: rotate(135deg)
+}
+ 
+.line:nth-child(10) {
+    transform: rotate(150deg)
+}
+ 
+.line:nth-child(11) {
+    transform: rotate(165deg)
+}
+ 
+.line:nth-child(12) {
+    transform: rotate(180deg)
+}
+
+    .flag > div > div.green {
+      position: absolute;
+      height: 300px;
+      width: 100%;
+      background-color: green;
+      top: 300px;
+    }
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+   
+    <p>The Flag</p>
+    <div>
+      <div class="wheel">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <div>
+          
+        </div>
+        <p>of</p>
+    </div>
+     
+      <div class="green">
+        <p>India</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
